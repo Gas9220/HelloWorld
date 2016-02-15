@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var myLabel: UILabel!
+    @IBAction func saluta(sender: UIButton) {
+        myLabel.text = "Ciao!"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +22,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
+    } 
 
 }
 
